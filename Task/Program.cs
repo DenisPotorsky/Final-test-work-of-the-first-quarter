@@ -4,6 +4,11 @@ Clear();
 WriteLine("Заполните массив через пробел");
 string[] array = ReadLine()!.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
+int length = NewArrayLength(array);
+string[] newArray = FillingNewArray(array, length);
+
+WriteLine("[{0}]", string.Join(", ", newArray));
+
 int NewArrayLength(string[] arr)
 {
     int count = 0;
