@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using static System.Console;
+Clear();
+
+WriteLine("Заполните массив через пробел");
+string[] array = ReadLine()!.Split(' ', StringSplitOptions.RemoveEmptyEntries);
